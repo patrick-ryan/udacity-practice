@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+	{{post.render() | safe}}
+{% endblock %}
+
+
+<!-- <!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>post permalink</title>
+    </head>
+
+    <body>
+
+    	<div class="entity">
+	    	<div class="entity-subject">%(subject)s</div>
+	    	<div class="entity-content">%(content)s</div>
+	    </div>
+	</body>
+
+</html> -->

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {% for entity in entities %}
+        {{ entity.render() | safe }}
+        <br><br>
+    {% endfor %}
+
+{% endblock %}

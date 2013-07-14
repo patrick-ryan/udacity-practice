@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>signup page</title>
+    </head>
+
+    <body>
+
+	    <u><b>Please virtualize.</b></u>
+		<br>
+		<br>
+		<form method="post">
+			<label>
+				Input username: 
+				<input type="text" name="username" value={{username}}>
+				<div style="color: red">{{nameerror}}</div>
+				<div style="color: red">{{existserror}}</div>
+			</label>
+			<br>
+			<label>
+				Input password: 
+				<input type="password" name="password" value={{password}}>
+				<div style="color: red">{{passerror}}</div>
+			</label>
+			<br>
+			<label>
+				Verify password: 
+				<input type="password" name="verify" value={{verify}}>
+				<div style="color: red">{{matcherror}}</div>
+			</label>
+			<br>
+			<label>
+				Input email (optional):
+				<input type="text" name="email" value={{email}}>
+				<div style="color: red">{{emailerror}}</div>
+			</label>
+			<br>
+			<input type="submit">
+		</form>
+
+	</body>
+
+</html>

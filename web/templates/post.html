@@ -1,0 +1,15 @@
+<div class="entity">
+	<div class="post-heading">
+		<div class="post-title">
+			{{entity.subject}}
+		</div>
+
+		<div class="post-date">
+			{{entity.created.strftime("%b %d, %Y")}}
+		</div>
+	</div>
+
+	<div class="post-content">
+		{{entity._render_text | safe}}
+	</div>
+</div>
